@@ -94,6 +94,20 @@ function addUpTo(num: number) {
           <li></li>
         </ul>
       </div>
+      <div>
+        <p>Array operations</p>
+        <ul>
+          <li>push <b>O(1)</b></li>
+          <li>pop <b>O(1)</b></li>
+          <li>shift <b>O(n)</b></li>
+          <li>unshift <b>O(n)</b></li>
+          <li>concat <b>O(n)</b></li>
+          <li>slice <b>O(n)</b></li>
+          <li>splice <b>O(n)</b></li>
+          <li>sort <b>O(n * log n)</b></li>
+          <li>forEach/map/filter/reduce ...<b>O(n)</b></li>
+        </ul>
+      </div>
     </div>
   );
 }
