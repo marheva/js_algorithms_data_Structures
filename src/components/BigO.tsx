@@ -79,4 +79,4 @@ function addUpTo(num: number) {
   );
 }
 
-export default BigO;
+export default BigO; 
