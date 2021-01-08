@@ -73,7 +73,26 @@ function addUpTo(num: number) {
         </ul>
       </div>
       <div>
-        <p>Objects</p>
+        <p>Objects:</p>
+        <ul>
+          <li>Inversion <b>O(1)</b></li>
+          <li>Removal <b>O(1)</b></li>
+          <li>Searching <b>O(n)</b></li>
+          <li>Access <b>O(1)</b></li>
+          <hr/>
+          <li>Object.keys <b>O(n)</b></li>
+          <li>Object.values <b>O(n)</b></li>
+          <li>Object.entries <b>O(n)</b></li>
+          <li>hasOwnPropertiae <b>O(1)</b></li>
+        </ul>
+      </div>
+      <div>
+        <p>When to use arrays</p>
+        <ul>
+          <li>when you need order;</li>
+          <li>when you need fast access/insertion and removal (sort of)</li>
+          <li></li>
+        </ul>
       </div>
     </div>
   );
