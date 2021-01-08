@@ -61,8 +61,19 @@ function addUpTo(num: number) {
       </div>
       <div>
         <ul>
-          <li> Arithmetics operations are constant</li>
+          <li>Arithmetics operations are constant</li>
+          <li>Variable assigment is constant</li>
+          <li>Accessing elements in array (by index) or object
+              (by key) is constant
+          </li>
+          <li>
+            In a loop, the complexity is the length of the loop
+            times the complexity of whatever happens inside of thr loop
+          </li>
         </ul>
+      </div>
+      <div>
+        <p>Objects</p>
       </div>
     </div>
   );
