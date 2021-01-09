@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function Problem(): JSX.Element {
+function ProblemSolvingApproach(): JSX.Element {
     function charCount(string: string): {[propertyName: string]: number} | undefined  {
         let result: {[propertyName: string]: number} = {};
         for(let char of string) {
@@ -209,4 +209,4 @@ function isAlphaNumeric(char: string) {
     )
 }
 
-export default Problem
+export default ProblemSolvingApproach
