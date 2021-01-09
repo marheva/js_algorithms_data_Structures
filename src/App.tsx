@@ -8,10 +8,12 @@ import {
   Link
 } from "react-router-dom";
 import BigO from './components/BigO';
+import Problem from './components/Problem';
 
 const TITLE:{[arg:string]: string} = {
   HOME: 'Home',
   BIG_O: 'BigO',
+  PROBLEM: 'Problem'
 }
 
 function App() {
@@ -20,13 +22,10 @@ function App() {
      <Router>
       <div>
         <ul>
-          {Object.keys(TITLE).map((element) => {
-            return (
-              <li key={element}><Link to={`/${TITLE[element].toLowerCase()}`}>{TITLE[element]}</Link></li>
-            )
-          })}
+          <li><Link to={`/${TITLE.HOME.toLowerCase()}`}>{TITLE.HOME}</Link></li>
+          <li><Link to={`/${TITLE.BIG_O.toLowerCase()}`}>{TITLE.BIG_O}</Link></li>
+          <li><Link to={`/${TITLE.PROBLEM.toLowerCase()}`}>{TITLE.PROBLEM}</Link></li>
         </ul>
-
         <hr />
         <Switch>
           <Route exact path="/home">
@@ -34,6 +33,9 @@ function App() {
           </Route>
           <Route path="/bigo">
             <BigO />
+          </Route>
+          <Route exact path="/problem">
+            <Problem />
           </Route>
         </Switch>
       </div>

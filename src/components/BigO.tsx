@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BigO() {
+function BigO(): JSX.Element {
     function addUpTo(num: number) {
         let total = 0;
         for(let i = 1; i <= num; i++) {
@@ -83,7 +83,7 @@ function addUpTo(num: number) {
           <li>Object.keys <b>O(n)</b></li>
           <li>Object.values <b>O(n)</b></li>
           <li>Object.entries <b>O(n)</b></li>
-          <li>hasOwnPropertiae <b>O(1)</b></li>
+          <li>hasOwnProperty <b>O(1)</b></li>
         </ul>
       </div>
       <div>
