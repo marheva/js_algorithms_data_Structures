@@ -9,11 +9,13 @@ import {
 } from "react-router-dom";
 import BigO from './components/BigO';
 import ProblemSolvingApproach from './components/Problem/ProblemSolvingApproach';
+import ProblemSolvingPatterns from './components/Problem/ProblemSolvingPatterns'
 
 const TITLE:{[arg:string]: string} = {
   HOME: 'Home',
   BIG_O: 'BigO',
-  PROBLEM_APPROACH: 'Problem solving approach'
+  PROBLEM_APPROACH: 'Problem solving approach',
+  PROBLEM_PATTERNS: 'Problem solving patterns'
 }
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <li><Link to={`/${TITLE.HOME.toLowerCase()}`}>{TITLE.HOME}</Link></li>
           <li><Link to={`/${TITLE.BIG_O.toLowerCase()}`}>{TITLE.BIG_O}</Link></li>
           <li><Link to={`/${`problemApproach`}`}>{TITLE.PROBLEM_APPROACH}</Link></li>
+          <li><Link to={`/${`problemPatterns`}`}>{TITLE.PROBLEM_PATTERNS}</Link></li>
         </ul>
         <hr />
         <Switch>
@@ -36,6 +39,9 @@ function App() {
           </Route>
           <Route exact path="/problemApproach">
             <ProblemSolvingApproach />
+          </Route>
+          <Route exact path="/problemPatterns">
+            <ProblemSolvingPatterns />
           </Route>
         </Switch>
       </div>
