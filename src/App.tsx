@@ -1,24 +1,24 @@
 import React from 'react';
 
 import './App.css';
-// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import BigO from './components/BigO';
-// import ProblemSolvingApproach from './components/Problem/ProblemSolvingApproach';
-// import ProblemSolvingPatterns from './components/Problem/ProblemSolvingPatterns';
-// import Recursion from './components/Recursion/Recursion';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import BigO from './components/BigO';
+import ProblemSolvingApproach from './components/Problem/ProblemSolvingApproach';
+import ProblemSolvingPatterns from './components/Problem/ProblemSolvingPatterns';
+import Recursion from './components/Recursion/Recursion';
 
-// const TITLE: { [arg: string]: string } = {
-//     HOME: 'Home',
-//     BIG_O: 'BigO',
-//     PROBLEM_APPROACH: 'Problem solving approach',
-//     PROBLEM_PATTERNS: 'Problem solving patterns',
-//     RECURSION: 'Recursion',
-// };
+const TITLE: { [arg: string]: string } = {
+    HOME: 'Home',
+    BIG_O: 'BigO',
+    PROBLEM_APPROACH: 'Problem solving approach',
+    PROBLEM_PATTERNS: 'Problem solving patterns',
+    RECURSION: 'Recursion',
+};
 
 function App() {
     return (
         <div className='App'>
-            {/* <Router>
+            <Router>
                 <div>
                     <ul>
                         <li>
@@ -66,7 +66,7 @@ function App() {
                         </Route>
                     </Switch>
                 </div>
-            </Router> */}
+            </Router>
         </div>
     );
 }
